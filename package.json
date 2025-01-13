@@ -1,0 +1,25 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:fonts": "cpx \"src/fonts/*.ttf\" dist/fonts/",
+    "watch:sass": "sass src/scss/style.scss src/style.css --watch",
+    "build:css": "postcss src/style.css -o dist/style.css css/*.css",
+    "build:all": "npm run clean && mkdir dist &&  npm run build:css && npm run build:fonts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cpx": "^1.5.0",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.83.1"
+  }
+}
